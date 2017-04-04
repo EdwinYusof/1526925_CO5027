@@ -24,6 +24,32 @@
             height: 187px;
             width: 950px; }
     </style>
+    <script>
+        $(document).ready(function () {
+            $("#ourproducts").css("display", "none");
+            $("#ouraddress").css("display", "none");
+            $("#viewproducts").click(function () {
+                $("#ourproducts").slideDown();
+
+
+            });
+
+            $("#viewmap").click(function () {
+                $("#ouraddress").slideDown();
+
+
+            });
+
+
+            $("#close").click(function () {
+                $(this).parent().fadeOut();
+
+
+            });
+
+
+        });
+    </script>
     </head>
 
 <body>

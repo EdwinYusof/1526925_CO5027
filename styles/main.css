@@ -7,7 +7,7 @@
 
 /*body*/
 body {
-    background-color: rgb(237,237,237);
+    background-color: gray;
     font-family: Arial, melvetica, sans-serif;
     font-size: 12px;
 }
@@ -190,6 +190,7 @@ body {
         border:1px solid gray;
         padding:20px;
         float:left;
+        z-index:-1;
     }
     #default #slider img {
         width:80%;
@@ -211,8 +212,8 @@ body {
 
     #default #message h1,p {
         padding:10px;
-        background-color:black;
-        color:white;
+       
+        color:#000000;
 
     }
 
@@ -221,8 +222,9 @@ body {
         background-color:#050217;
         color:white;
         text-align:left;
-        line-height:40px;
+    
         font-size:1.2em;
+        opacity:.8;
     }
 
     .product {
@@ -259,4 +261,96 @@ body {
         height:250px;
 
     }
+
+
+    .pop {
+        overflow-y:scroll;
+        height:450px;
+     
+        
+
+    }
+    .pop p {
+        margin:0;
+        padding:10px;
+        background-color:none;
+        position:absolute;
+        width:500px;
+        opacity:.8;
+    }
+
+    .pop ul li {
+        list-style:none;
+        display:inline-block;
+        margin:10px;
+        padding:10px;
+        text-align:center;
+        border:1px solid gray;
+
+    }
+    .pop ul li ul {
+        text-align:left;
+        font-weight:bold;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+     .pop ul li ul li {
+       display:list-item;
+    }
+    .pop ul img {
+        width:150px;
+        height:150px;
+
+    }
+#ourproducts,#ouraddress {
   
+    position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 800px;
+  height: 500px;
+  background-color:white;
+  padding:10px;
+  z-index:9999;
+  box-shadow: 5px 5px 5px gray;
+  
+}
+
+#contactform fieldset {
+    width:500px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+#ouraddress {
+
+
+
+}
+#ouraddress .minimap {
+     float:left;
+     width:50%;
+     height:450px;
+     background-color:black;
+     background-image:url("../images/map.png");
+     background-size:cover;
+}
+#ouraddress .address {
+    float:left;
+    padding:10px;
+     height:450px;
+}
+
+#ouraddress .address ul  {
+    list-style:none;
+    font-size:1.2em;
+}
+
+#ouraddress .address ul li  {
+    margin:10px;
+}

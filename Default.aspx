@@ -20,14 +20,94 @@
         <asp:Literal ID="products" runat="server"></asp:Literal>
     </div>
     <div id="message">
-        <h1>Watches for men</h1>
-        <br />
-        <p>Our collection of watches for men includes the finest luxury and designer brands from around the world. We stock the most desirable men’s watches in the UK, so whether you’re looking for Swiss craftsmanship or cutting edge design, we’re sure to have the men’s watch you’re looking for.</p>
-    </div>
+        <h1>Bouncer Rentals</h1>
 
+        <p>At Bounce Party Rentals, we offer high quality inflatables at discount rental prices. With our selection of moonwalks, bounce houses, water slides, slip n slide, obstacle courses, inflatable playlands, games and even carnival concessions, we can provide all the necessary equipment needed for any birthday party or event. Please take a few minutes to see what kind of inflatables we offer and click on the online reservation button to setup an appointment today..</p>
+    <hr />
+        <h2>Bouncer Quality</h2>
+        <p>Our inflatables are very durable, kid safe and 100% cleaned and sanitized in-between every rental. We are fully licensed and insured. All of our employees undergo very strict background checks so you can feel safe when working with Bounce Party Rentals. </p>
+    <hr />
+        <h3 id="viewproducts" style="cursor:pointer;color:red;">View our products</h3>
+
+     
+    </div>
+   
 
 </div>
 
-    
+        <div id="ourproducts">
+            <p id="close" style="text-align:right; cursor:pointer">Close window</p>
+
+            <div class="pop">
+                <ul>
+                <li>
+                    <ul>
+                        <li><img src="images/products/asd.jpg" /></li>
+                        <li>Product Name:<em></em></li>
+                        <li>Brand:<em></em></li>
+                        <li>Price:<em> </em></li>
+                        <li>Seller:<em> </em></li>
+                    </ul>
+
+                </li>
+
+                     <li>
+                    <ul>
+                        <li><img src="images/products/bouncehouse.jpg" /></li>
+                        <li>Product Name:<em></em></li>
+                        <li>Brand:<em></em></li>
+                        <li>Price:<em> </em></li>
+                        <li>Seller:<em> </em></li>
+                    </ul>
+
+                </li>
+
+                     <li>
+                    <ul>
+                        <li><img src="images/products/Green.jpg" /></li>
+                        <li>Product Name:<em></em></li>
+                        <li>Brand:<em></em></li>
+                        <li>Price:<em> </em></li>
+                        <li>Seller:<em> </em></li>
+                    </ul>
+
+                </li>
+
+                     <li>
+                    <ul>
+                        <li><img src="images/products/Small indoor.jpg" /></li>
+                        <li>Product Name:<em></em></li>
+                        <li>Brand:<em></em></li>
+                        <li>Price:<em> </em></li>
+                        <li>Seller:<em> </em></li>
+                    </ul>
+
+                </li>
+
+                     <li>
+                    <ul>
+                        <li><img src="images/products/withslide.jpg" /></li>
+                        <li>Product Name:<em></em></li>
+                        <li>Brand:<em></em></li>
+                        <li>Price:<em> </em></li>
+                        <li>Seller:<em> </em></li>
+                    </ul>
+
+                </li>
+
+                     <li>
+                    <ul>
+                        <li><img src="images/products/Slidee bouncers.jpg" /></li>
+                        <li>Product Name:<em></em></li>
+                        <li>Brand:<em></em></li>
+                        <li>Price:<em> </em></li>
+                        <li>Seller:<em> </em></li>
+                    </ul>
+
+                </li>
+</ul>
+            </div>
+
+    </div>
 </asp:Content>
 
