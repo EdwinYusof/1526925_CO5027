@@ -109,7 +109,7 @@ body {
 
 /*footer*/
 .footer {
-    height: 50px;
+    height: 150px;
     background: linear-gradient(to top, #c2bcb5, #ffffff);
     color: black;
     border-radius: 5px 5px 5px 5px;
@@ -121,6 +121,26 @@ body {
         text-align: center;
     }
 
+    .footer table {
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+        .footer table a {
+        text-decoration:none;
+        }
+
+        .footer p {
+            text-align:center;
+           
+            line-height:0;
+        }
+
+    .footer img {
+    width:30px;
+    height:30px;
+    }
     .contact  {
      height:600px;
      margin:0;
@@ -327,16 +347,16 @@ margin-left:auto;
 margin-right:auto;
 }
 
-#ouraddress {
+#ouraddress *{
 
-
+  
 
 }
 #ouraddress .minimap {
      float:left;
      width:50%;
      height:450px;
-     background-color:black;
+    
      background-image:url("../images/map.png");
      background-size:cover;
 }
@@ -353,4 +373,24 @@ margin-right:auto;
 
 #ouraddress .address ul li  {
     margin:10px;
+}
+
+.viewmap {
+
+    color:red; cursor:pointer;text-align:center;
+    padding:5px;
+    background-color:#c2bcb5;
+    width:200px;
+    display:block;
+    border-radius:10px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.add {
+  font-size:.8em;
+  color:rgb(67,153,200);
+
 }
