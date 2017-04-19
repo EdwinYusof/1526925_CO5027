@@ -12,7 +12,9 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtName" Width="200px" runat="server"></asp:TextBox>
-                        <br />
+                    
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtName" ErrorMessage="Please enter your name" ForeColor="Red"></asp:RequiredFieldValidator>
+                    
                     </td>
                     <td>
                         &nbsp;</td>
@@ -23,6 +25,7 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtEmail" Width="200px" runat="server"  TextMode="Email"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtEmail" ErrorMessage="Please enter your email" ForeColor="Red"></asp:RequiredFieldValidator>
                         <br />
                     </td>
                     <td>
@@ -34,6 +37,7 @@
                     </td>
                     <td>
                         <asp:TextBox ID="txtSubject" Width="200px" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtSubject" ErrorMessage="Please enter a subject" ForeColor="Red"></asp:RequiredFieldValidator>
                         <br />
                     </td>
                     <td>
@@ -46,38 +50,25 @@
                     <td style="vertical-align: top">
                         <br />
                         <asp:TextBox ID="txtComments" Width="269px" runat="server" Rows="4" TextMode="MultiLine" Height="79px"></asp:TextBox>
-                    </td>
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtComments" ErrorMessage="Please enter your comments" ForeColor="Red"></asp:RequiredFieldValidator>
+                         </td>
                     <td style="vertical-align: top">
                         &nbsp;</td>
                 </tr>
                 <tr>
                     <td colspan="3">
-                        &nbsp;</td>
+                        <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <asp:Button ID="Button1" runat="server" Text="submit" />
+                        <asp:Button ID="Button1" runat="server" Text="submit" OnClick="Button1_Click" style="height: 29px" />
                     </td>
                 </tr>
 
             </table>
         </fieldset>
         <h3 id="viewmap" class="viewmap">View Address and Map</h3>
-        <div id="ouraddress">
-             <p id="close" style="text-align:right; cursor:pointer">Close window</p>
-            <div class="minimap" id="minimap"></div>
-            <div class="address">
-                <ul>
-                    <li>
-                        
-                        Address:   <span class="add">Sutton Building Thornton Science Park Pool Lane, <br />Chester Cheshire, CH2 4NU</span></li>
-                    <li>Phone:<span class="add">2356457</span></li>
-                    <li>Fax:<span class="add">2356457</span></li>
-                    <li>Email:<span class="add">dokeperuan@gmail.com</span></li>
-                </ul>
-
-            </div>
-
-        </div>
+      
         </div>
 </asp:Content>
