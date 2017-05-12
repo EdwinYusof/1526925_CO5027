@@ -69,6 +69,19 @@
             </table>
         </fieldset>
         <h3 id="viewmap" class="viewmap">View Address and Map</h3>
-      
+       <div id="ouraddress">
+             <p id="close" style="text-align:right; cursor:pointer">Close window</p>
+            <div class="minimap" id="minimap"></div>
+            <div class="address">
+                <ul>
+                    <li>Address:</li>
+                    <li>Phone:</li>
+                    <li>Fax:</li>
+                    <li>Email:</li>
+                </ul>
+
+            </div>
+
+        </div>
         </div>
 </asp:Content>

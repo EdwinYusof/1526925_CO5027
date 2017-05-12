@@ -32,11 +32,14 @@
         $(document).ready(function () {
             $("#ourproducts").css("display", "none");
             $("#ouraddress").css("display", "none");
+            
             $("#viewproducts").click(function () {
                 $("#ourproducts").slideDown();
 
 
             });
+
+          
 
             $("#viewmap").click(function () {
                 $("#ouraddress").slideDown();
@@ -45,12 +48,19 @@
 
             });
 
+          
 
             $("#close").click(function () {
                 $(this).parent().fadeOut();
 
 
             });
+
+            $("#popup").click(function () {
+                $(this).fadeOut();
+            });
+
+          
 
 
         });
@@ -68,9 +78,10 @@
             <div class="menu">
                 <ul>
                     <li class="navigation_first_item"><a href="Default.aspx">Home</a></li>
-                    <li><a href="product.aspx">Product</a></li>
+                    <li><a href="products.aspx">Product</a></li>
                     <li><a href="contact.aspx">Contact us</a></li>
                     <li><a href="about.aspx">About us</a></li>
+                      <li><a href="login.aspx">Login</a></li>
                 </ul>
             </div>
            

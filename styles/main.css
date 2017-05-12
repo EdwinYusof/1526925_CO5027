@@ -283,6 +283,30 @@ body {
     }
 
 
+    .popup {
+       
+    position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+  background-color:white;
+  padding:10px;
+  z-index:9999;
+  box-shadow: 5px 5px 5px gray;
+   padding: 10px;
+   text-align :center;
+   display:block;
+        
+
+    }
+
+
+
+
     .pop {
         overflow-y:scroll;
         height:450px;
@@ -298,14 +322,20 @@ body {
         width:500px;
         opacity:.8;
     }
-
+        .pop ul {
+                margin-left:auto;
+        margin-right:auto;
+        
+        }
     .pop ul li {
         list-style:none;
         display:inline-block;
         margin:10px;
         padding:10px;
         text-align:center;
-        border:1px solid gray;
+        border:none;
+      
+    
 
     }
     .pop ul li ul {
@@ -313,14 +343,23 @@ body {
         font-weight:bold;
         margin-left:auto;
         margin-right:auto;
+         border:1px solid gray;
+         padding:10px;
+       
     }
 
      .pop ul li ul li {
        display:list-item;
+          border:none;
+          margin:0;
+          padding:0;
+          text-align:left;
+         
     }
     .pop ul img {
         width:150px;
         height:150px;
+           border:none;
 
     }
 #ourproducts,#ouraddress {
@@ -394,3 +433,17 @@ margin-right:auto;
   color:rgb(67,153,200);
 
 }
+.buy {
+display:block;
+width:100px;
+padding:5px;
+text-align :center;
+margin-left:auto;
+margin-right:auto;
+background-color:red;
+border-radius:5px;
+}
+    .buy a {
+    text-decoration:none;
+  color:#110c0c;
+    }

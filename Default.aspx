@@ -36,76 +36,45 @@
 </div>
 
         <div id="ourproducts">
+            <h1>Recently Added</h1>
+            <a href="product.aspx">View all products</a>
             <p id="close" style="text-align:right; cursor:pointer">Close window</p>
 
             <div class="pop">
-                <ul>
-                <li>
+                
+              
+
+                    <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
+                        <HeaderTemplate>
+                            <ul>
+                                
+                        </HeaderTemplate>
+                         <ItemTemplate>
+                              <li>
                     <ul>
-                        <li><img src="images/products/asd.jpg" /></li>
-                        <li>Product Name:<em></em></li>
-                        <li>Brand:<em></em></li>
-                        <li>Price:<em> </em></li>
-                        <li>Seller:<em> </em></li>
+                        <li><img src='<%# Eval("imagepath") %>' alt='<%# Eval("bouncername") %>' /> </li>
+                        <li>Product Name:<em><%# Eval("bouncername") %></em></li>
+                        <li>Category:<em><%# Eval("bouncercategory") %></em></li>
+                        <li>Price:<em><%# Eval("price") %></em></li>
+                        <li>Stock:<em><%# Eval("quantity") %></em></li>
+                        <li><span class="buy"><a href="buyproduct.aspx">Buy</a></span></li>
                     </ul>
+                                      </li>
+                        </ItemTemplate>
+                
 
-                </li>
+                        <FooterTemplate>
+                        
+                            </ul>
+                        </FooterTemplate>
 
-                     <li>
-                    <ul>
-                        <li><img src="images/products/bouncehouse.jpg" /></li>
-                        <li>Product Name:<em></em></li>
-                        <li>Brand:<em></em></li>
-                        <li>Price:<em> </em></li>
-                        <li>Seller:<em> </em></li>
-                    </ul>
+                    </asp:Repeater>
 
-                </li>
+             
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Dokeperuan %>" SelectCommand="SELECT TOP 5 [bouncername], [bouncercategory], [quantity], [price], [imagepath] FROM [products] "></asp:SqlDataSource>
 
-                     <li>
-                    <ul>
-                        <li><img src="images/products/Green.jpg" /></li>
-                        <li>Product Name:<em></em></li>
-                        <li>Brand:<em></em></li>
-                        <li>Price:<em> </em></li>
-                        <li>Seller:<em> </em></li>
-                    </ul>
+             
 
-                </li>
-
-                     <li>
-                    <ul>
-                        <li><img src="images/products/Small indoor.jpg" /></li>
-                        <li>Product Name:<em></em></li>
-                        <li>Brand:<em></em></li>
-                        <li>Price:<em> </em></li>
-                        <li>Seller:<em> </em></li>
-                    </ul>
-
-                </li>
-
-                     <li>
-                    <ul>
-                        <li><img src="images/products/withslide.jpg" /></li>
-                        <li>Product Name:<em></em></li>
-                        <li>Brand:<em></em></li>
-                        <li>Price:<em> </em></li>
-                        <li>Seller:<em> </em></li>
-                    </ul>
-
-                </li>
-
-                     <li>
-                    <ul>
-                        <li><img src="images/products/Slidee bouncers.jpg" /></li>
-                        <li>Product Name:<em></em></li>
-                        <li>Brand:<em></em></li>
-                        <li>Price:<em> </em></li>
-                        <li>Seller:<em> </em></li>
-                    </ul>
-
-                </li>
-</ul>
             </div>
 
     </div>
