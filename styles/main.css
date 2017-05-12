@@ -447,3 +447,64 @@ border-radius:5px;
     text-decoration:none;
   color:#110c0c;
     }
+
+    .edit{
+display:block;
+ margin:2px;
+padding:5px;
+
+text-align :center;
+margin-left:auto;
+margin-right:auto;
+background-color:rgb(10,85,125);
+border-radius:5px;
+}
+    .edit a {
+       
+    text-decoration:none;
+  color:#ffffff;
+    }
+
+
+   /* admin page*/
+
+#leftmenu {
+padding:10px;
+height:400px;
+width:20%;
+float:left;
+border-right:double 5px #000000;
+}
+
+#leftmenu ul {
+    margin-left:30px;
+}
+
+#productlisting {
+width:70%;
+float:right;
+overflow-y:scroll;
+height:400px;
+
+}
+
+    #productlisting ul img {
+        width:150px;
+        height:150px;
+    }
+
+    #productlisting ul li {
+        display:inline-block;
+        margin:20px;
+        border:solid 1px gray;
+        padding:5px;
+    }
+
+    #productlisting ul li ul li {
+        display:list-item;
+        margin:0;
+        border:none;
+        list-style:none;
+        padding:0;
+
+    }
