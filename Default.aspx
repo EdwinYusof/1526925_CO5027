@@ -1,11 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<asp:Content ID="defaultpage" ContentPlaceHolderID="titile" Runat="Server">
-    Home
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="head" Runat="Server">
-               
-</asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentBody" Runat="Server">
      <script>
     $(document).ready(function(){
@@ -13,6 +8,24 @@
   
     });
          </script>
+    <div id="loginpane">
+         <table>
+                     <tr>
+                         <td>Enter your email: </td>
+                         <td>Enter your password: </td>
+                         <td ></td>
+                         
+                     </tr>
+                      <tr>
+                         <td>
+                             <asp:TextBox ID="txtemail" runat="server" Width="150" TextMode="Email"></asp:TextBox></td>
+                         <td>
+                             <asp:TextBox ID="txtpassword" runat="server" TextMode="Password" Width="150"></asp:TextBox></td>
+                               <td ><asp:Button ID="Button1" runat="server" Text="Login" OnClick="Button1_Click" /></td>
+                     </tr>
+                      
+                 </table>
+    </div>
 <div id="default">
    
     <div id="slider">
@@ -28,8 +41,7 @@
         <p>Our inflatables are very durable, kid safe and 100% cleaned and sanitized in-between every rental. We are fully licensed and insured. All of our employees undergo very strict background checks so you can feel safe when working with Bounce Party Rentals. </p>
     <hr />
         <h3 id="viewproducts" style="cursor:pointer;color:red;">View our products</h3>
-
-     
+         
     </div>
    
 
@@ -76,6 +88,8 @@
              
 
             </div>
+
+             
 
     </div>
 </asp:Content>

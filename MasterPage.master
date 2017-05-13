@@ -32,14 +32,14 @@
         $(document).ready(function () {
             $("#ourproducts").css("display", "none");
             $("#ouraddress").css("display", "none");
-            
+            $("#popuplogin").css("display", "none");
             $("#viewproducts").click(function () {
                 $("#ourproducts").slideDown();
 
 
             });
 
-          
+            $("#ourproducts").fadeIn(2000);
 
             $("#viewmap").click(function () {
                 $("#ouraddress").slideDown();
@@ -59,6 +59,17 @@
             $("#popup").click(function () {
                 $(this).fadeOut();
             });
+
+            $("#cartlink").click(function () {
+                $("#popuplogin").slideToggle();
+            });
+
+            $("#popuplogin").click(function () {
+                $(this).slideUp();
+
+            });
+
+          
 
           
 
@@ -81,7 +92,7 @@
                     <li><a href="products.aspx">Product</a></li>
                     <li><a href="contact.aspx">Contact us</a></li>
                     <li><a href="about.aspx">About us</a></li>
-                      <li><a href="login.aspx">Login</a></li>
+                 
                 </ul>
             </div>
            

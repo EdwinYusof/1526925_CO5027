@@ -53,7 +53,7 @@ body {
     width: 100%;
     margin: 0px 0px 10px;
     padding: 0px;
-    height: 40px;
+    height: 50px;
     color: rgb(243,243,243);
     border-radius: 5px 5px 5px 5px;
 }
@@ -305,7 +305,53 @@ body {
     }
 
 
+.popuplogin {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    padding: 10px;
+    z-index: 9999;
+    box-shadow: 5px 5px 5px gray;
+    padding: 10px;
+    text-align: center;
+}
 
+.cartlink:hover {
+cursor:pointer;
+color:red;
+
+}
+
+   #loginpane
+{
+       float:right;
+       width:400px;
+       margin-top:-70px;
+       text-align:center;
+       position:relative;
+}
+
+   #loginpane input {
+       background-color:rgb(14,79,114);
+       color:white;
+       padding:2px;
+       border-radius:5px;
+       text-align:center;
+   }
+   #loginpane input[type=submit]{
+       background-color:gray;
+       padding:5px;
+       width:50px;
+   }
+        
+
+    
 
     .pop {
         overflow-y:scroll;
@@ -482,7 +528,7 @@ border-right:double 5px #000000;
 
 #productlisting {
 width:70%;
-float:right;
+float:left;
 overflow-y:scroll;
 height:400px;
 
@@ -507,4 +553,32 @@ height:400px;
         list-style:none;
         padding:0;
 
+    }
+
+#delete {
+padding:20px;
+text-align:center;
+
+}
+
+.selected {
+font-weight:bold;
+color:rgb(10,85,125);
+
+}
+
+#loginpage {
+text-align:center;
+
+}
+
+    #loginpage table {
+    
+        margin-left:auto;
+        margin-right:auto;
+        display:inline-block;
+        padding:20px;
+        border:1px solid gray;
+        text-align:left;
+    
     }
