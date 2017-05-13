@@ -312,7 +312,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 400px;
+    width: 500px;
     height: 300px;
     background-color: white;
     padding: 10px;
@@ -320,8 +320,18 @@ body {
     box-shadow: 5px 5px 5px gray;
     padding: 10px;
     text-align: center;
+    overflow:auto;
 }
 
+.popuplogin table {
+    width:100%;
+    border-collapse:collapse;
+    margin:5px;
+}
+
+.popuplogin table tr td {
+    border:1px solid gray;
+}
 .cartlink:hover {
 cursor:pointer;
 color:red;
@@ -533,6 +543,27 @@ overflow-y:scroll;
 height:400px;
 
 }
+
+ #productlisting table{
+     padding:10px;
+     display:block;
+     margin:10px;
+     border:1px solid gray;
+     width:400px;
+     margin-left:auto;
+     margin-right:auto;
+    
+ }
+
+    #productlisting table img {
+    
+    width:200px;
+    height:200px;
+    border:outset 1px gray;
+    
+    }
+
+
 
     #productlisting ul img {
         width:150px;

@@ -69,7 +69,7 @@
                         <li>Category:<em><%# Eval("bouncercategory") %></em></li>
                         <li>Price:<em><%# Eval("price") %></em></li>
                         <li>Stock:<em><%# Eval("quantity") %></em></li>
-                        <li><span class="buy"><a href="buyproduct.aspx">Buy</a></span></li>
+                        <li><span class="buy"><a href="buyproduct.aspx?id=<%# Eval("bouncerid") %>">Buy</a></span></li>
                     </ul>
                                       </li>
                         </ItemTemplate>
@@ -83,7 +83,7 @@
                     </asp:Repeater>
 
              
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Dokeperuan %>" SelectCommand="SELECT TOP 5 [bouncername], [bouncercategory], [quantity], [price], [imagepath] FROM [products] "></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Dokeperuan %>" SelectCommand="SELECT TOP 5 [bouncerid],[bouncername], [bouncercategory], [quantity], [price], [imagepath] FROM [products] "></asp:SqlDataSource>
 
              
 
