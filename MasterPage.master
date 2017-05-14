@@ -33,6 +33,7 @@
             $("#ourproducts").css("display", "none");
             $("#ouraddress").css("display", "none");
             $("#popuplogin").css("display", "none");
+            $("#popuplogin2").css("display", "none");
             $("#viewproducts").click(function () {
                 $("#ourproducts").slideDown();
 
@@ -64,7 +65,16 @@
                 $("#popuplogin").slideToggle();
             });
 
+            $("#cartlink2").click(function () {
+                $("#popuplogin2").slideToggle();
+            });
+
             $("#popuplogin").click(function () {
+                $(this).slideUp();
+
+            });
+
+            $("#popuplogin2").click(function () {
                 $(this).slideUp();
 
             });

@@ -49,7 +49,7 @@
 
         <div id="ourproducts">
             <h1>Recently Added</h1>
-            <a href="product.aspx">View all products</a>
+            <a href="products.aspx">View all products</a>
             <p id="close" style="text-align:right; cursor:pointer">Close window</p>
 
             <div class="pop">
